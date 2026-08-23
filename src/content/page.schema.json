@@ -1,0 +1,462 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stranica",
+  "type": "object",
+  "required": [
+    "slug",
+    "title",
+    "blocks"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "description": "Dio URL-a, npr. \"canva\" za /canva. Za naslovnicu je \"home\".",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Naziv stranice u kartici preglednika i u breadcrumbsima."
+    },
+    "seo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Opis za tražilice i dijeljenje."
+        },
+        "image": {
+          "type": "string",
+          "description": "Putanja do slike za dijeljenje, npr. /img/nesto.png"
+        }
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "description": "Sadržaj stranice, redom kojim se prikazuje.",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/hero"
+          },
+          {
+            "$ref": "#/definitions/cards"
+          },
+          {
+            "$ref": "#/definitions/process"
+          },
+          {
+            "$ref": "#/definitions/figure"
+          },
+          {
+            "$ref": "#/definitions/video"
+          },
+          {
+            "$ref": "#/definitions/gallery"
+          },
+          {
+            "$ref": "#/definitions/audio"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "variant": {
+      "type": "string",
+      "enum": [
+        "surface"
+      ],
+      "description": "Podloga sekcije. \"surface\" je svjetlija bež pozadina."
+    },
+    "hero": {
+      "type": "object",
+      "description": "Naslovni blok stranice. Sadrži jedini <h1>.",
+      "required": [
+        "type",
+        "heading"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "hero"
+        },
+        "eyebrow": {
+          "type": "string",
+          "description": "Sitni tekst iznad naslova, npr. \"Alat — Canva\"."
+        },
+        "heading": {
+          "type": "string"
+        },
+        "lead": {
+          "type": "string",
+          "description": "Uvodni odlomak, veći od ostalih."
+        },
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "specs": {
+          "type": "array",
+          "description": "Podaci u panelu sa strane (format, alat...).",
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "value"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              },
+              "font": {
+                "type": "string",
+                "description": "CSS font-family, da se font prikaže sam u sebi."
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "palette": {
+          "type": "array",
+          "description": "Kvadratići boja s nazivom i hex vrijednošću.",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "hex"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "hex": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "cards": {
+      "type": "object",
+      "description": "Mreža kartica s poveznicama na druge stranice.",
+      "required": [
+        "type",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "cards"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "heading": {
+          "type": "string"
+        },
+        "variant": {
+          "$ref": "#/definitions/variant"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "href": {
+                "type": "string",
+                "description": "Putanja unutar stranice, npr. /canva"
+              },
+              "label": {
+                "type": "string",
+                "description": "Tekst poveznice. Bez njega piše \"Pogledaj\"."
+              }
+            }
+          }
+        }
+      }
+    },
+    "process": {
+      "type": "object",
+      "description": "Koraci izrade. Ako koraci nemaju \"title\", prikazuju se kao natuknice umjesto numerirano.",
+      "required": [
+        "type",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "process"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "heading": {
+          "type": "string"
+        },
+        "tool": {
+          "type": "string",
+          "description": "Red s alatima, izvorima i formatom izvoza."
+        },
+        "variant": {
+          "$ref": "#/definitions/variant"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "image": {
+                "type": "string"
+              },
+              "alt": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "description": "Jedna velika slika, npr. gotov rad. Širina i visina su obavezne da nema pomicanja layouta.",
+      "required": [
+        "type",
+        "src",
+        "alt",
+        "width",
+        "height"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "figure"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "heading": {
+          "type": "string"
+        },
+        "src": {
+          "type": "string",
+          "description": "Putanja iz mape public, npr. /img/brosura.png"
+        },
+        "alt": {
+          "type": "string",
+          "description": "Opis slike za čitače ekrana. Obavezno."
+        },
+        "caption": {
+          "type": "string"
+        },
+        "width": {
+          "type": "integer",
+          "description": "Stvarna širina slike u pikselima."
+        },
+        "height": {
+          "type": "integer",
+          "description": "Stvarna visina slike u pikselima."
+        },
+        "size": {
+          "const": "mark",
+          "description": "Prikaz u maloj, centriranoj veličini (za logo)."
+        },
+        "variant": {
+          "$ref": "#/definitions/variant"
+        },
+        "download": {
+          "type": "object",
+          "required": [
+            "href",
+            "label"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "href": {
+              "type": "string"
+            },
+            "label": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "video": {
+      "type": "object",
+      "description": "Video s YouTubea ili lokalna datoteka iz mape public/media.",
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "video"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "heading": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "youtube": {
+          "type": "string",
+          "description": "Samo ID iz linka, npr. P03uxorub8w"
+        },
+        "src": {
+          "type": "string",
+          "description": "Lokalna MP4 datoteka ako se ne koristi YouTube."
+        },
+        "poster": {
+          "type": "string"
+        },
+        "captions": {
+          "type": "string",
+          "description": "Putanja do .vtt datoteke s titlovima."
+        },
+        "variant": {
+          "$ref": "#/definitions/variant"
+        }
+      }
+    },
+    "gallery": {
+      "type": "object",
+      "description": "Mreža slika. Klik otvara povećani prikaz sa strelicama.",
+      "required": [
+        "type",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "gallery"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "heading": {
+          "type": "string"
+        },
+        "columns": {
+          "type": "integer",
+          "enum": [
+            2,
+            3
+          ],
+          "description": "Broj stupaca na širokom ekranu. Zadano 3."
+        },
+        "variant": {
+          "$ref": "#/definitions/variant"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "src",
+              "alt",
+              "width",
+              "height"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "src": {
+                "type": "string",
+                "description": "Putanja iz mape public, npr. /img/render-1.png"
+              },
+              "alt": {
+                "type": "string",
+                "description": "Opis slike za čitače ekrana. Obavezno."
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer",
+                "description": "Stvarna širina slike u pikselima."
+              },
+              "height": {
+                "type": "integer",
+                "description": "Stvarna visina slike u pikselima."
+              }
+            }
+          }
+        }
+      }
+    },
+    "audio": {
+      "type": "object",
+      "description": "Audio player s kontrolama.",
+      "required": [
+        "type",
+        "src"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "audio"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "heading": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "src": {
+          "type": "string",
+          "description": "Datoteka iz mape public/media, npr. /media/zvuk.mp3"
+        },
+        "transcript": {
+          "type": "string",
+          "description": "Neobavezan tekstualni opis onoga što se čuje."
+        },
+        "variant": {
+          "$ref": "#/definitions/variant"
+        }
+      }
+    }
+  }
+}
