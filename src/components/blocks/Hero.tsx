@@ -1,6 +1,7 @@
 import type { HeroBlock } from '../../content/types'
 import Container from '../ui/Container'
 import Eyebrow from '../ui/Eyebrow'
+import { useReveal } from '../../lib/useReveal'
 
 export default function Hero({
   eyebrow,
@@ -11,9 +12,10 @@ export default function Hero({
   palette = []
 }: Omit<HeroBlock, 'type'>) {
   const hasPanel = specs.length > 0 || palette.length > 0
+  const reveal = useReveal<HTMLElement>()
 
   return (
-    <section className="hero">
+    <section ref={reveal.ref} className={`hero ${reveal.className}`}>
       <Container>
         <div className={`hero__grid ${hasPanel ? 'hero__grid--split' : ''}`.trim()}>
           <div>

@@ -281,10 +281,22 @@ button { font: inherit; color: inherit; }
 .notfound { text-align: center; }
 .notfound p { color: var(--c-ink-muted); margin-block: var(--space-5) var(--space-6); }
 
+/* Scroll reveal — a section fades up once, the first time it comes into view */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
   }
+  .reveal { opacity: 1; transform: none; }
 }
