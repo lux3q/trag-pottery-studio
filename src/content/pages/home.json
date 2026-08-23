@@ -1,0 +1,93 @@
+{
+  "$schema": "../page.schema.json",
+  "slug": "home",
+  "title": "Naslovnica",
+  "seo": {
+    "description": "Projektni zadatak iz kolegija Multimedija — web stranica izmišljenog keramičkog studija TRAG."
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Lucija Baljak",
+      "heading": "Projektni zadatak — Multimedija",
+      "lead": "Ova web stranica nastala je kao projektni zadatak iz kolegija Multimedija. TRAG je izmišljeni keramički studio koji sam uzela kao temu.",
+      "paragraphs": [
+        "Odabrane boje i tipografija navedeni su uz ovaj tekst, a svaka podstranica prikazuje jedan medij i alat kojim je izrađen."
+      ],
+      "specs": [
+        {
+          "label": "Naslovni font",
+          "value": "Fraunces",
+          "font": "'Fraunces', Georgia, serif"
+        },
+        {
+          "label": "Font za tekst",
+          "value": "Work Sans",
+          "font": "'Work Sans', system-ui, sans-serif"
+        }
+      ],
+      "palette": [
+        {
+          "name": "Pozadina",
+          "hex": "#F7F4EF"
+        },
+        {
+          "name": "Površina",
+          "hex": "#EFEAE1"
+        },
+        {
+          "name": "Tekst",
+          "hex": "#241F1B"
+        },
+        {
+          "name": "Terakota",
+          "hex": "#B45B38"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "variant": "surface",
+      "eyebrow": "Sadržaj",
+      "heading": "Podstranice projekta",
+      "items": [
+        {
+          "title": "Inkscape",
+          "text": "Vektorski logotip studija nacrtan u Inkscape.",
+          "href": "/inkscape",
+          "label": "Pogledaj logotip"
+        },
+        {
+          "title": "Photopea",
+          "text": "Obrada fotografija za web, izrađena u pregledniku bez instalacije.",
+          "href": "/photopea",
+          "label": "Pogledaj obradu"
+        },
+        {
+          "title": "Canva",
+          "text": "Brošura studija izrađena u Canvi.",
+          "href": "/canva",
+          "label": "Pogledaj brošuru"
+        },
+        {
+          "title": "DaVinci Resolve",
+          "text": "Kratki video koji je reklama za radionicu - složen u DaVinci Resolve",
+          "href": "/davinci",
+          "label": "Pogledaj video"
+        },
+        {
+          "title": "Audacity",
+          "text": "Zvučk za reklamu složen u Audacityu.",
+          "href": "/audacity",
+          "label": "Vidi kako je nastala"
+        },
+        {
+          "title": "Blender",
+          "text": "3D model keramičkog komada, modeliran i renderiran za prikaz na stranici.",
+          "href": "/blender",
+          "label": "Pogledaj model"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "../page.schema.json",
+  "slug": "davinci",
+  "title": "DaVinci Resolve",
+  "seo": {
+    "description": "Video reklama za keramičku radionicu TRAG montirana u DaVinci Resolveu — postupak izrade korak po korak."
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Alat — DaVinci Resolve",
+      "heading": "Video reklama izrađena u DaVinci Resolveu",
+      "lead": "DaVinci Resolve sam odabrala jer je besplatan u punoj verziji i za jednostavnije stvari mi je jednostavniji za korištenje. Video je zamišljen kao kratka reklama za radionicu.",
+      "specs": [
+        {
+          "label": "Format",
+          "value": "1920 × 1080, 24 fps",
+          "note": "Vodoravni format, jer video ide na YouTube i onda se ugrađuje na stranicu."
+        },
+        {
+          "label": "Alat",
+          "value": "DaVinci Resolve 20",
+          "font": "'Work Sans', system-ui, sans-serif"
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "variant": "surface",
+      "eyebrow": "Postupak",
+      "tool": "Snimka: Pexels, besplatna licenca · Slika: Unsplash, besplatna licenca · izvoz: MP4 (H.264)",
+      "items": [
+        {
+          "text": "Snimku sam preuzela s Pexelsa, koji nudi videozapise pod besplatnom licencom, i to u 4K rezoluciji."
+        },
+        {
+          "text": "U Project Settings postavila sam razlučivost timelinea na 1920 × 1080 i broj kadrova na 24, da odgovara snimci koju sam skinula. To mora doći prije uvoza materijala, jer se broj kadrova poslije zaključa i više ga ne možeš promijeniti."
+        },
+        {
+          "text": "Snimku sam uvukla u Media Pool i otvorila novi timeline. Stavila sam ju na V1 traku."
+        },
+        {
+          "text": "Naslov sam dodala kao Text+ na traku iznad videa i namjestila da se pojavi tek nakon nekoliko sekundi. Fraunces, font s web stranice, Resolve nije prepoznao, pa sam uzela Georgiju kao najbliži serif koji je već u sustavu. Tekst sam iz sredine spustila u donji dio kadra da ne prekriva posudu, a obojala sam ga tamnom bojom #241F1B umjesto bijelom, jer se bijelo na svijetloj glini jednostavno ne vidi."
+        },
+        {
+          "text": "Zadnjih nekoliko sekundi čini mirna slika keramičkih posuda sa Unsplasha, a preko nje idu logotip i tekst. Logotip sam morala izvesti iz Inkscapea kao PNG s prozirnom pozadinom, jer Resolve ne uvozi SVG. Tekst sam razdvojila na dva sloja — naziv studija, poziv i termini — da svakom mogu zasebno namjestiti položaj i trenutak pojavljivanja."
+        },
+        {
+          "text": "Slojevi u završnom bloku ne ulaze istovremeno nego s malim pomakom, da se tekst čita redom umjesto da padne kao blok. Fadeove sam dodala povlačenjem male oznake u kutu svakog klipa i pazila da svi budu jednako dugi — kad su različiti, odmah se vidi da nisu rađeni s namjerom."
+        },
+        {
+          "text": "Na kraju sam dodala zvuk koji sam prije toga složila u Audacityju. Uvezla sam WAV datoteku u Media Pool, stavila ju na audio traku ispod videa i poravnala s početkom snimke, tako da zvuk i slika završavaju u istom trenutku. O samom zvuku i njegovoj izradi pišem više na zasebnoj podstranici Audacity."
+        },
+        {
+          "text": "Gotov video izvezla sam na kartici Deliver, u formatu MP4 s kodekom H.264 i razlučivosti 1920 × 1080. Datoteku sam zatim postavila na YouTube."
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "eyebrow": "Rezultat",
+      "heading": "Gotova reklama",
+      "youtube": "P03uxorub8w",
+      "description": "Reklama traje oko 32 sekunde. Snimka je preuzeta s Pexelsa, a fotografija u završnom bloku s Unsplasha, obje pod besplatnom licencom."
+    }
+  ]
+}

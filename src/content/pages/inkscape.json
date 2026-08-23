@@ -1,0 +1,82 @@
+{
+  "$schema": "../page.schema.json",
+  "slug": "inkscape",
+  "title": "Inkscape",
+  "seo": {
+    "description": "Logo keramičkog studija TRAG izrađen u Inkscapeu."
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Alat — Inkscape",
+      "heading": "Logo izrađen u Inkscapeu",
+      "lead": "Inkscape sam odabrala jer sam već radila u njemu i dobra je praksa da logo bude vektorski za daljnu upotrebu kao npr za tisak ili favicon.",
+      "paragraphs": [
+        "Boja znaka je terakota #B45B38, ista koju web koristi za naglaske. Za takav oblik odlučila sam se jer mi izgleda zanimljivo i pomalo podsjeća na otisak prsta."
+      ],
+      "specs": [
+        {
+          "label": "Format",
+          "value": "SVG, vektorski"
+        },
+        {
+          "label": "Alat",
+          "value": "Inkscape",
+          "font": "'Work Sans', system-ui, sans-serif"
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "variant": "surface",
+      "eyebrow": "Postupak",
+      "items": [
+        {
+          "text": "Otvorila sam Inkscape i napravila novi dokument."
+        },
+        {
+          "text": "Alatom za elipsu nacrtala sam elipsu, malo višu nego širu. Maknula sam joj ispunu i ostavila samo tanak sivi rub, jer mi služi kao vodilja po kojoj ću crtati. Zaključala sam ju u panelu Layers and Objects da mi se ne pomiče dok radim."
+        },
+        {
+          "text": "Bezier alatom klikala sam osam točaka oko elipse, naizmjence malo unutar i malo izvan nje. Krug nisam zatvorila nego sam pri vrhu ostavila otvor."
+        },
+        {
+          "text": "Alatom za čvorove označila sam sve čvorove i prečacem Shift+S pretvorila ih u smooth, pa se izlomljena crta zaoblila u valovitu liniju."
+        },
+        {
+          "text": "Liniju sam zatim doradila jer se na dva mjesta presijecala sama sa sobom. Pojedine čvorove vratila sam bliže elipsi i ravnomjernije ih rasporedila po obodu."
+        },
+        {
+          "text": "U Fill and Stroke maknula sam ispunu, a pod Stroke paint upisala hex #B45B38. Debljinu linije postavila sam na 6,5 px, a završetke i spojeve na zaobljene."
+        },
+        {
+          "text": "Neko vrijeme mi se sve crtalo kao tanka crna linija, bez boje i debljine, jer je dokument bio u outline prikazu. Preko View → Display Mode → Normal vratila sam normalan prikaz."
+        },
+        {
+          "text": "Liniju sam kopirala i zalijepila više puta. Svaku kopiju malo sam pomaknula i skalirala prema van, tako da nastane niz koncentričnih valovitih linija. Razmake nisam mjerila nego slagala na oko, da linije ne budu potpuno pravilne."
+        },
+        {
+          "text": "Elipsu koja mi je služila kao vodilja na kraju sam obrisala."
+        },
+        {
+          "text": "Znak sam spremila kao SVG, a radni prostor izrezala na kvadrat oko samog znaka. Tako ga mogu koristiti u bilo kojoj veličini i obojati ga izravno u CSS-u."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "size": "mark",
+      "eyebrow": "Rezultat",
+      "heading": "Gotov logotip",
+      "src": "/brand/logo.svg",
+      "alt": "Logotip studija TRAG: niz koncentričnih valovitih linija u terakota boji, prekinutih pri vrhu, koje podsjećaju na otisak prsta.",
+      "caption": "Vektorski znak u SVG formatu. Isti se koristi u zaglavlju stranice i kao favicon.",
+      "width": 320,
+      "height": 320,
+      "download": {
+        "href": "/brand/logo.svg",
+        "label": "Preuzmi logotip (SVG)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "name": "TRAG",
+    "tagline": "keramički studio"
+  },
+  "author": "Lucija Baljak",
+  "footer": {
+    "note": "Projektni zadatak iz kolegija Multimedija."
+  },
+  "home": {
+    "label": "Naslovnica",
+    "href": "/"
+  },
+  "nav": [
+    {
+      "label": "Inkscape",
+      "href": "/inkscape"
+    },
+    {
+      "label": "Photopea",
+      "href": "/photopea"
+    },
+    {
+      "label": "Canva",
+      "href": "/canva"
+    },
+    {
+      "label": "DaVinci Resolve",
+      "href": "/davinci"
+    },
+    {
+      "label": "Audacity",
+      "href": "/audacity"
+    },
+    {
+      "label": "Blender",
+      "href": "/blender"
+    }
+  ]
+}

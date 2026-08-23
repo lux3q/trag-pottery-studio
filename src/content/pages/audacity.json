@@ -1,0 +1,74 @@
+{
+  "$schema": "../page.schema.json",
+  "slug": "audacity",
+  "title": "Audacity",
+  "seo": {
+    "description": "Zvučna podloga za video reklamu keramičke radionice TRAG složena u Audacityju — postupak izrade korak po korak."
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Alat — Audacity",
+      "heading": "Zvučna podloga izrađena u Audacityju",
+      "lead": "Audacity sam odabrala jer mi je poznat alat i već sam radila u njemu. Odlučila sam napraviti pozadinski zvuk za video koji je reklama za radionicu.",
+      "paragraphs": [
+        "Zvuk nije samostalan zapis nego podloga videa, pa se čuje u reklami na podstranici DaVinci Resolve."
+      ],
+      "specs": [
+        {
+          "label": "Format",
+          "value": "WAV, 48 kHz",
+          "note": "Nekomprimirani format, jer zvuk ide dalje u montažu."
+        },
+        {
+          "label": "Alat",
+          "value": "Audacity",
+          "font": "'Work Sans', system-ui, sans-serif"
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "variant": "surface",
+      "eyebrow": "Postupak",
+      "tool": "Zvukovi: Pixabay, besplatna licenca · izvoz: WAV",
+      "items": [
+        {
+          "text": "Četiri zvučna zapisa preuzela sam s Pixabaya, koji nudi zvuk pod besplatnom licencom: klavirsku podlogu, zvuk lončarskog kola, zveckanje keramike i žamor ljudi."
+        },
+        {
+          "text": "Sve zapise uvezla sam u Audacity, gdje se svaki otvara kao zasebna traka. Nisam ih pustila da krenu istovremeno — kolo ulazi prvo, klavir nekoliko sekundi kasnije, a keramika i žamor zadnji, da se zvuk gradi postupno."
+        },
+        {
+          "text": "Video traje 32 sekunde pa sam zvuk skratila na tu duljinu. Označila sam sve trake od 32. sekunde do kraja i obrisala višak. Kod glazbe nisam zadržala sam početak nego dio koji najbolje stoji sam za sebe."
+        },
+        {
+          "text": "Žamor, keramika i kolo bili su u originalu preglasni, pa sam ih stišala tako da klavir nosi, kolo i keramika se prepoznaju, a žamor ostane u pozadini. Glasnoće nisam postavljala po predodređenim brojkama nego po sluhu: ako se u žamoru razaznaju pojedini glasovi, prejak je."
+        },
+        {
+          "text": "Za ulaz i izlaz zvukova koristila sam Effect → Fading → Adjustable Fade, jer za razliku od običnog fadea dopušta odabir krivulje. Postavila sam Fade Down s prilagodbom sredine na −20 %, pa zvuk pada brže na početku, a blaže pri kraju."
+        },
+        {
+          "text": "Miks sam izvezla kao WAV pri 48 kHz, jer je to standardna frekvencija za video i odgovara postavkama projekta u Resolveu. Audacity pri izvozu sam spaja sve trake u jednu datoteku, koju sam zatim uvezla u montažu."
+        }
+      ]
+    },
+    {
+      "type": "audio",
+      "eyebrow": "Poslušaj",
+      "heading": "Zvučna podloga",
+      "src": "/media/zvuk-radionica.mp3",
+      "description": "Miks traje 32 sekunde: klavirska podloga, lončarsko kolo, zveckanje keramike i žamor ljudi."
+    },
+    {
+      "type": "figure",
+      "eyebrow": "Rezultat",
+      "heading": "Gotov miks u Audacityju",
+      "src": "/img/audacity.png",
+      "alt": "Projekt u Audacityju s četiri zvučne trake jednu ispod druge: klavirska podloga, zvuk lončarskog kola, zveckanje keramike i žamor ljudi, s vidljivim valnim oblicima i prijelazima na početku i kraju.",
+      "caption": "Sve trake poravnate na 32 sekunde, s različitim točkama ulaza i fadeovima na krajevima.",
+      "width": 3004,
+      "height": 1534
+    }
+  ]
+}
