@@ -5,12 +5,9 @@ project. Each subpage covers one tool: it shows the finished artefact and docume
 how it was made — logo (Inkscape), brochure (Canva), video ad (DaVinci Resolve),
 soundtrack (Audacity), 3D model (Blender).
 
-Live: https://trag-pottery-studio.netlify.app
-
 ## Stack
 
-Vite · React 18 · react-router-dom v6 · TypeScript (strict) · plain CSS with custom
-properties. No UI library, no CSS framework — interaction and layout are hand-written.
+Vite · React 18 · react-router-dom v6 · TypeScript (strict)
 
 ## Running it
 
