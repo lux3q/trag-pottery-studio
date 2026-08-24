@@ -57,11 +57,22 @@
       ]
     },
     {
+      "type": "figure",
+      "eyebrow": "Montaža",
+      "heading": "Projekt u DaVinci Resolveu",
+      "src": "/img/davinci-resolve.png",
+      "alt": "Sučelje DaVinci Resolvea s otvorenim projektom: snimka na video traci, tekstualni slojevi iznad nje i zvučna podloga na audio traci ispod.",
+      "caption": "Timeline s videom, tekstualnim slojevima i zvučnom podlogom uvezenom iz Audacityja.",
+      "width": 2551,
+      "height": 1412
+    },
+    {
       "type": "video",
       "eyebrow": "Rezultat",
       "heading": "Gotova reklama",
       "youtube": "P03uxorub8w",
-      "description": "Reklama traje oko 32 sekunde. Snimka je preuzeta s Pexelsa, a fotografija u završnom bloku s Unsplasha, obje pod besplatnom licencom."
+      "description": "Reklama traje 33 sekunde. Snimka je preuzeta s Pexelsa, a fotografija u završnom bloku s Unsplasha, obje pod besplatnom licencom.",
+      "tight": true
     }
   ]
 }

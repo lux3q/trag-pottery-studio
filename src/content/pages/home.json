@@ -53,13 +53,13 @@
       "items": [
         {
           "title": "Inkscape",
-          "text": "Vektorski logotip studija nacrtan u Inkscape.",
+          "text": "Vektorski logotip studija nacrtan u Inkscapeu.",
           "href": "/inkscape",
           "label": "Pogledaj logotip"
         },
         {
           "title": "Photopea",
-          "text": "Obrada fotografija za web, izrađena u pregledniku bez instalacije.",
+          "text": "Obrada fotografija u Photopei.",
           "href": "/photopea",
           "label": "Pogledaj obradu"
         },
@@ -71,21 +71,15 @@
         },
         {
           "title": "DaVinci Resolve",
-          "text": "Kratki video koji je reklama za radionicu - složen u DaVinci Resolve",
+          "text": "Kratka video reklama za radionicu, složena u DaVinci Resolveu.",
           "href": "/davinci",
           "label": "Pogledaj video"
         },
         {
           "title": "Audacity",
-          "text": "Zvučk za reklamu složen u Audacityu.",
+          "text": "Zvučna podloga za reklamu složena u Audacityju.",
           "href": "/audacity",
-          "label": "Vidi kako je nastala"
-        },
-        {
-          "title": "Blender",
-          "text": "3D model keramičkog komada, modeliran i renderiran za prikaz na stranici.",
-          "href": "/blender",
-          "label": "Pogledaj model"
+          "label": "Poslušaj zvuk"
         }
       ]
     }

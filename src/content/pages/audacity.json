@@ -17,8 +17,8 @@
       "specs": [
         {
           "label": "Format",
-          "value": "WAV, 48 kHz",
-          "note": "Nekomprimirani format, jer zvuk ide dalje u montažu."
+          "value": "WAV, 48 kHz · MP3",
+          "note": "WAV je nekomprimiran, jer zvuk ide dalje u montažu. Za slušanje na ovoj stranici isti je miks izvezen i kao MP3, jer bi WAV od 33 sekunde bio nekoliko megabajta."
         },
         {
           "label": "Alat",
@@ -31,7 +31,7 @@
       "type": "process",
       "variant": "surface",
       "eyebrow": "Postupak",
-      "tool": "Zvukovi: Pixabay, besplatna licenca · izvoz: WAV",
+      "tool": "Zvukovi: Pixabay, besplatna licenca · izvoz: WAV za montažu, MP3 za web",
       "items": [
         {
           "text": "Četiri zvučna zapisa preuzela sam s Pixabaya, koji nudi zvuk pod besplatnom licencom: klavirsku podlogu, zvuk lončarskog kola, zveckanje keramike i žamor ljudi."
@@ -40,7 +40,7 @@
           "text": "Sve zapise uvezla sam u Audacity, gdje se svaki otvara kao zasebna traka. Nisam ih pustila da krenu istovremeno — kolo ulazi prvo, klavir nekoliko sekundi kasnije, a keramika i žamor zadnji, da se zvuk gradi postupno."
         },
         {
-          "text": "Video traje 32 sekunde pa sam zvuk skratila na tu duljinu. Označila sam sve trake od 32. sekunde do kraja i obrisala višak. Kod glazbe nisam zadržala sam početak nego dio koji najbolje stoji sam za sebe."
+          "text": "Video traje 33 sekunde pa sam zvuk skratila na tu duljinu. Označila sam sve trake od 33. sekunde do kraja i obrisala višak. Kod glazbe nisam zadržala sam početak nego dio koji najbolje stoji sam za sebe."
         },
         {
           "text": "Žamor, keramika i kolo bili su u originalu preglasni, pa sam ih stišala tako da klavir nosi, kolo i keramika se prepoznaju, a žamor ostane u pozadini. Glasnoće nisam postavljala po predodređenim brojkama nego po sluhu: ako se u žamoru razaznaju pojedini glasovi, prejak je."
@@ -54,21 +54,22 @@
       ]
     },
     {
-      "type": "audio",
-      "eyebrow": "Poslušaj",
-      "heading": "Zvučna podloga",
-      "src": "/media/zvuk-radionica.mp3",
-      "description": "Miks traje 32 sekunde: klavirska podloga, lončarsko kolo, zveckanje keramike i žamor ljudi."
-    },
-    {
       "type": "figure",
-      "eyebrow": "Rezultat",
-      "heading": "Gotov miks u Audacityju",
+      "eyebrow": "Izrada",
+      "heading": "Miks u Audacityju",
       "src": "/img/audacity.png",
       "alt": "Projekt u Audacityju s četiri zvučne trake jednu ispod druge: klavirska podloga, zvuk lončarskog kola, zveckanje keramike i žamor ljudi, s vidljivim valnim oblicima i prijelazima na početku i kraju.",
-      "caption": "Sve trake poravnate na 32 sekunde, s različitim točkama ulaza i fadeovima na krajevima.",
+      "caption": "Sve trake poravnate na 33 sekunde, s različitim točkama ulaza i fadeovima na krajevima.",
       "width": 3004,
       "height": 1534
+    },
+    {
+      "type": "audio",
+      "eyebrow": "Rezultat",
+      "heading": "Zvučna podloga",
+      "src": "/audio/zvuk.mp3",
+      "description": "Miks traje 33 sekunde: klavirska podloga, lončarsko kolo, zveckanje keramike i žamor ljudi.",
+      "tight": true
     }
   ]
 }

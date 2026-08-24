@@ -1,0 +1,135 @@
+{
+  "$schema": "../page.schema.json",
+  "slug": "photopea",
+  "title": "Photopea",
+  "seo": {
+    "description": "Obrada fotografija u Photopei za web stranicu keramičkog studija TRAG — vinjeta, crno-bijelo i selektivna desaturacija."
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Alat — Photopea",
+      "heading": "Obrada fotografija u Photopei",
+      "lead": "Photopeu sam odabrala jer joj je sučelje gotovo isto kao Photoshopu.",
+      "specs": [
+        {
+          "label": "Format",
+          "value": "PNG, 1200 × 1800 px",
+          "note": "Original je bio 3747 × 5621 px i 21,9 MB, što je veličina za tisak."
+        },
+        {
+          "label": "Alat",
+          "value": "Photopea",
+          "font": "'Work Sans', system-ui, sans-serif",
+          "note": "Besplatna - web preglednik."
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "eyebrow": "Rezultat",
+      "heading": "Povuci klizač da vidiš razliku",
+      "items": [
+        {
+          "steps": [
+            "Otvorila sam photopeu i išla na Datoteka → Otvori i otvorila sam fotografiju koju sam radije skinula sa Unsplasha.",
+            "Nakon što sam učitala novu forografiju koja mi je u Background sloju idem na Sloj → Novo podešavanje → Krivulje. Sredinu linije povučem prema dolje, do X 200 / Y 94, da cijela slika potamni.",
+            "Kliknem bijeli pravokutnik pored ikone krivulje — to je maska. Po sloju za podešavanje se ne može crtati, samo po njoj.",
+            "Idem na alat za gradijent, iz popisa gotovih odaberem crno-u-prozirno.",
+            "Vrstu gradijenta prebacim s Linearno na Radijalno da bi dibila krgu sa mekim rubovima s kojim ću sredinu vratiti u prirodno svijetlo.",
+            "Povučem iz sredine fotofrafije radijalni gradijent te se ta sredina vraća u orginalno svijetlo da osvjetli lončanicu koja se izrađuje dok ostatak fotografije ostaje tamniji."
+          ],
+          "before": {
+            "src": "/img/photopea-old-focus.png",
+            "alt": "Fotografija keramičkih zdjelica prije obrade"
+          },
+          "after": {
+            "src": "/img/photopea-focus.png",
+            "alt": "Ista fotografija ali - rubovi su potamnjeni, a sredina je ostala u originalnoj svjetlini."
+          },
+          "width": 1200,
+          "height": 1800
+        },
+        {
+          "steps": [
+            "Otvorila sam photopeu i išla na Datoteka → Otvori i otvorila sam fotografiju koju sam radije skinula sa Unsplasha.",
+            "Nakon što sam učitala novu forografiju koja mi je u Background sloju idem na Sloj → Novo podešavanje → Crno-bijelo da sliku pretvorim u crno - bijelu.",
+            "Idem na alat za gradijent, iz popisa gotovih odaberem crno-u-prozirno. te Povučem par puta kratku srtu preko tanjura da bi se on vratio u izvornu boju dok ostatak slike ostaje sivi."
+          ],
+          "before": {
+            "src": "/img/photopea-b-w-old.png",
+            "alt": "Fotografija keramike u punoj boji, prije pretvaranja u crno-bijelo."
+          },
+          "after": {
+            "src": "/img/photopea-b-w.png",
+            "alt": "Ista fotografija pretvorena u crno-bijelo, s toplim tonom preko tanjura."
+          },
+          "width": 1200,
+          "height": 1800
+        },
+        {
+          "steps": [
+            "Otvorila sam photopeu i išla na Datoteka → Otvori i otvorila sam fotografiju koju sam radije skinula sa Unsplasha.",
+            "Nakon toga idem na Sloj → Novo podešavanje → Nijansa/Zasićenost.",
+            "Umjesto Master odaberem Crvenu, jer je ružičasta podloga jedina izrazito crvena stvar u kadru.",
+            "Zasićenost na −90 i podloga posivi."
+          ],
+          "before": {
+            "src": "/img/photopea-saturacija-old.png",
+            "alt": "Fotografija zdjelica na ružičastoj pozadini, prije uklanjanja boje s pozadine."
+          },
+          "after": {
+            "src": "/img/photopea-saturacija.png",
+            "alt": "Ista fotografija s posivjelom pozadinom, dok su zdjelice zadržale boju."
+          },
+          "width": 1200,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "eyebrow": "Postupak",
+      "heading": "Spremanje za web",
+      "tool": "Izvoz: PNG, 1200 × 1800 px",
+      "items": [
+        {
+          "text": "Preko Datoteka → Spremi za web otvorio se dijalog s pretpregledom."
+        },
+        {
+          "text": "Dimenzije sam smanjila na 1800 px po duljoj stranici. Za društvene mreže dovoljno je 1350, za sliku u tekstu 1200–1600, za punu širinu ekrana do 2560. Širina se prilagodi sama ako je uključena poveznica između polja."
+        }
+      ],
+      "variant": "surface"
+    },
+    {
+      "type": "gallery",
+      "eyebrow": "Galerija",
+      "heading": "Obrađene fotografije",
+      "columns": 3,
+      "items": [
+        {
+          "src": "/img/photopea-focus.png",
+          "alt": "Keramička zdjelica sa fokuson u sredini: rubovi kadra su potamnjeni, a sredina je ostala u originalnoj svjetlini.",
+          "caption": "Fokus u sredini",
+          "width": 1200,
+          "height": 1800
+        },
+        {
+          "src": "/img/photopea-b-w.png",
+          "alt": "Keramika u crno-bijeloj obradi, s toplim tonom preko sivila.",
+          "caption": "Crno-bijelo",
+          "width": 1200,
+          "height": 1800
+        },
+        {
+          "src": "/img/photopea-saturacija.png",
+          "alt": "Zdjelice u boji na posivjeloj ružičastoj pozadini.",
+          "caption": "Selektivna desaturacija",
+          "width": 1200,
+          "height": 1800
+        }
+      ]
+    }
+  ]
+}

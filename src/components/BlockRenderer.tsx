@@ -5,6 +5,7 @@ import VideoBlock from './blocks/VideoBlock'
 import Cards from './blocks/Cards'
 import Process from './blocks/Process'
 import Gallery from './blocks/Gallery'
+import Compare from './blocks/Compare'
 import AudioBlock from './blocks/AudioBlock'
 
 // A switch instead of a lookup map, so each block's props are checked against its own type.
@@ -20,6 +21,8 @@ function renderBlock(block: Block, key: string) {
       return <Figure key={key} {...block} />
     case 'gallery':
       return <Gallery key={key} {...block} />
+    case 'compare':
+      return <Compare key={key} {...block} />
     case 'video':
       return <VideoBlock key={key} {...block} />
     case 'audio':

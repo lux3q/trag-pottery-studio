@@ -61,6 +61,16 @@
     },
     {
       "type": "figure",
+      "eyebrow": "Izrada",
+      "heading": "Brošura u Canvi",
+      "src": "/img/canva.png",
+      "alt": "Sučelje Canve s otvorenim dizajnom brošure: radna površina s rasporedom teksta i fotografija, uz lijevu alatnu traku i gornju traku s postavkama.",
+      "caption": "Radna površina prije izvoza, s poravnanjem elemenata po mreži.",
+      "width": 3018,
+      "height": 1502
+    },
+    {
+      "type": "figure",
       "eyebrow": "Rezultat",
       "heading": "Gotova brošura",
       "src": "/img/brosura.png",
@@ -71,7 +81,8 @@
       "download": {
         "href": "/img/brosura.png",
         "label": "Preuzmi brošuru (PNG)"
-      }
+      },
+      "tight": true
     }
   ]
 }

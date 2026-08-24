@@ -2,8 +2,8 @@
 
 Multimedia presentation site for a fictional pottery workshop, built as a university
 project. Each subpage covers one tool: it shows the finished artefact and documents
-how it was made — logo (Inkscape), brochure (Canva), video ad (DaVinci Resolve),
-soundtrack (Audacity), 3D model (Blender).
+how it was made — logo (Inkscape), photo editing (Photopea), brochure (Canva),
+video ad (DaVinci Resolve), soundtrack (Audacity).
 
 ## Stack
 

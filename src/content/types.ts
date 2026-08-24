@@ -70,6 +70,8 @@ export interface FigureBlock {
   height: number
   /** 'mark' centres the image at logo size */
   size?: 'mark'
+  /** sit close to the block above instead of starting a new gap */
+  tight?: boolean
   download?: { href: string; label: string }
   variant?: SectionVariant
 }
@@ -85,6 +87,7 @@ export interface VideoBlock {
   poster?: string
   captions?: string
   variant?: SectionVariant
+  tight?: boolean
 }
 
 export interface GalleryItem {
@@ -112,6 +115,30 @@ export interface AudioBlock {
   src: string
   /** optional written description of what can be heard */
   transcript?: string
+  tight?: boolean
+  variant?: SectionVariant
+}
+
+export interface CompareImage {
+  src: string
+  alt: string
+}
+
+export interface CompareItem {
+  /** the steps that produced this change, shown beside the slider */
+  steps?: string[]
+  caption?: string
+  before: CompareImage
+  after: CompareImage
+  width: number
+  height: number
+}
+
+export interface CompareBlock {
+  type: 'compare'
+  eyebrow?: string
+  heading?: string
+  items: CompareItem[]
   variant?: SectionVariant
 }
 
@@ -121,6 +148,7 @@ export type Block =
   | ProcessBlock
   | FigureBlock
   | GalleryBlock
+  | CompareBlock
   | VideoBlock
   | AudioBlock
 

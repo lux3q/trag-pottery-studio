@@ -10,7 +10,7 @@ export default function Process({ eyebrow, heading, tool, items = [], variant }:
 
   return (
     <Section variant={variant}>
-      <BlockHead eyebrow={eyebrow} heading={heading} />
+      <BlockHead eyebrow={eyebrow} heading={heading} className="process__head" />
       {tool && <p className="process__tool">{tool}</p>}
 
       <List className={`process__list ${numbered ? '' : 'process__list--bullets'}`.trim()}>

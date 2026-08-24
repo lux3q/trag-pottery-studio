@@ -52,6 +52,9 @@ button { font: inherit; color: inherit; }
 
 .section { padding-block: var(--space-9); }
 .section--surface { background: var(--c-surface); }
+/* a block that belongs with the one above it: both gaps collapse to one small one */
+.section--tight { padding-top: var(--space-6); }
+.section:has(+ .section--tight) { padding-bottom: 0; }
 
 @media (min-width: 640px) {
   .container { padding-inline: var(--space-6); }

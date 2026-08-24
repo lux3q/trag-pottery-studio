@@ -8,10 +8,11 @@ export default function AudioBlock({
   description,
   src,
   transcript,
-  variant
+  variant,
+  tight
 }: Omit<AudioBlockData, 'type'>) {
   return (
-    <Section variant={variant}>
+    <Section variant={variant} tight={tight}>
       <figure className="media">
         <BlockHead eyebrow={eyebrow} heading={heading} />
 

@@ -13,12 +13,13 @@ export default function Figure({
   height,
   download,
   size,
-  variant
+  variant,
+  tight
 }: Omit<FigureBlock, 'type'>) {
   const srcSet = buildSrcSet(src, width)
 
   return (
-    <Section variant={variant}>
+    <Section variant={variant} tight={tight}>
       <BlockHead eyebrow={eyebrow} heading={heading} className="figure__head" />
 
       <figure className={`figure ${size ? `figure--${size}` : ''}`.trim()}>

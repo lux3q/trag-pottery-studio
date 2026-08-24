@@ -60,6 +60,9 @@
           },
           {
             "$ref": "#/definitions/audio"
+          },
+          {
+            "$ref": "#/definitions/compare"
           }
         ]
       }
@@ -315,6 +318,10 @@
               "type": "string"
             }
           }
+        },
+        "tight": {
+          "type": "boolean",
+          "description": "Prislanja blok uz onaj iznad, bez razmaka na vrhu."
         }
       }
     },
@@ -355,6 +362,10 @@
         },
         "variant": {
           "$ref": "#/definitions/variant"
+        },
+        "tight": {
+          "type": "boolean",
+          "description": "Prislanja blok uz onaj iznad, bez razmaka na vrhu."
         }
       }
     },
@@ -455,6 +466,103 @@
         },
         "variant": {
           "$ref": "#/definitions/variant"
+        },
+        "tight": {
+          "type": "boolean",
+          "description": "Prislanja blok uz onaj iznad, bez razmaka na vrhu."
+        }
+      }
+    },
+    "compare": {
+      "type": "object",
+      "description": "Usporedba prije i poslije obrade, s klizačem. Stavke se automatski numeriraju.",
+      "required": [
+        "type",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "compare"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "heading": {
+          "type": "string"
+        },
+        "variant": {
+          "$ref": "#/definitions/variant"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "before",
+              "after",
+              "width",
+              "height"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Kratke točke postupka, prikazane uz klizač."
+              },
+              "caption": {
+                "type": "string"
+              },
+              "before": {
+                "type": "object",
+                "required": [
+                  "src",
+                  "alt"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "src": {
+                    "type": "string",
+                    "description": "Putanja iz mape public, npr. /img/photopea-focus.png"
+                  },
+                  "alt": {
+                    "type": "string",
+                    "description": "Opis slike za čitače ekrana. Obavezno."
+                  }
+                }
+              },
+              "after": {
+                "type": "object",
+                "required": [
+                  "src",
+                  "alt"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "src": {
+                    "type": "string",
+                    "description": "Putanja iz mape public, npr. /img/photopea-focus.png"
+                  },
+                  "alt": {
+                    "type": "string",
+                    "description": "Opis slike za čitače ekrana. Obavezno."
+                  }
+                }
+              },
+              "width": {
+                "type": "integer",
+                "description": "Stvarna širina slike u pikselima."
+              },
+              "height": {
+                "type": "integer",
+                "description": "Stvarna visina slike u pikselima."
+              }
+            }
+          }
         }
       }
     }

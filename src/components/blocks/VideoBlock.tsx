@@ -10,10 +10,11 @@ export default function VideoBlock({
   poster,
   captions,
   youtube,
-  variant
+  variant,
+  tight
 }: Omit<VideoBlockData, 'type'>) {
   return (
-    <Section variant={variant}>
+    <Section variant={variant} tight={tight}>
       <figure className="media">
         <BlockHead eyebrow={eyebrow} heading={heading} />
 
