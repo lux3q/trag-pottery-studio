@@ -5,6 +5,8 @@ project. Each subpage covers one tool: it shows the finished artefact and docume
 how it was made — logo (Inkscape), photo editing (Photopea), brochure (Canva),
 video ad (DaVinci Resolve), soundtrack (Audacity).
 
+Live at [lucijabaljak.netlify.app](https://lucijabaljak.netlify.app/).
+
 ## Stack
 
 Vite · React 18 · react-router-dom v6 · TypeScript (strict)
