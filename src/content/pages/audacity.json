@@ -18,7 +18,7 @@
         {
           "label": "Format",
           "value": "WAV, 48 kHz · MP3",
-          "note": "WAV je nekomprimiran, jer zvuk ide dalje u montažu. Za slušanje na ovoj stranici isti je miks izvezen i kao MP3, jer bi WAV od 33 sekunde bio nekoliko megabajta."
+          "note": "WAV je nekomprimiran, jer zvuk ide dalje u montažu. Za slušanje na ovoj stranici isti je miks izvezen i kao MP3, jer bi WAV od 33 sekunde imao nekoliko megabajta."
         },
         {
           "label": "Alat",
@@ -37,13 +37,13 @@
           "text": "Četiri zvučna zapisa preuzela sam s Pixabaya, koji nudi zvuk pod besplatnom licencom: klavirsku podlogu, zvuk lončarskog kola, zveckanje keramike i žamor ljudi."
         },
         {
-          "text": "Sve zapise uvezla sam u Audacity, gdje se svaki otvara kao zasebna traka. Nisam ih pustila da krenu istovremeno — kolo ulazi prvo, klavir nekoliko sekundi kasnije, a keramika i žamor zadnji, da se zvuk gradi postupno."
+          "text": "Sve zapise uvezla sam u Audacity, gdje se svaki otvara kao zasebna traka. Nisam ih pustila da krenu istodobno — kolo ulazi prvo, klavir nekoliko sekundi kasnije, a keramika i žamor zadnji, da se zvuk gradi postupno."
         },
         {
           "text": "Video traje 33 sekunde pa sam zvuk skratila na tu duljinu. Označila sam sve trake od 33. sekunde do kraja i obrisala višak. Kod glazbe nisam zadržala sam početak nego dio koji najbolje stoji sam za sebe."
         },
         {
-          "text": "Žamor, keramika i kolo bili su u originalu preglasni, pa sam ih stišala tako da klavir nosi, kolo i keramika se prepoznaju, a žamor ostane u pozadini. Glasnoće nisam postavljala po predodređenim brojkama nego po sluhu: ako se u žamoru razaznaju pojedini glasovi, prejak je."
+          "text": "Žamor, keramika i kolo bili su u originalu preglasni, pa sam ih stišala tako da klavir nosi, da se kolo i keramika prepoznaju, a da žamor ostane u pozadini. Glasnoće nisam postavljala po predodređenim brojkama nego po sluhu: ako se u žamoru razaznaju pojedini glasovi, prejak je."
         },
         {
           "text": "Za ulaz i izlaz zvukova koristila sam Effect → Fading → Adjustable Fade, jer za razliku od običnog fadea dopušta odabir krivulje. Postavila sam Fade Down s prilagodbom sredine na −20 %, pa zvuk pada brže na početku, a blaže pri kraju."

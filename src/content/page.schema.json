@@ -458,7 +458,7 @@
         },
         "src": {
           "type": "string",
-          "description": "Datoteka iz mape public/media, npr. /media/zvuk.mp3"
+          "description": "Datoteka iz mape public/audio, npr. /audio/zvuk.mp3"
         },
         "transcript": {
           "type": "string",

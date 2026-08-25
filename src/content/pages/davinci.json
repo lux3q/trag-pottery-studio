@@ -15,7 +15,7 @@
         {
           "label": "Format",
           "value": "1920 × 1080, 24 fps",
-          "note": "Vodoravni format, jer video ide na YouTube i onda se ugrađuje na stranicu."
+          "note": "Vodoravni format, jer video ide na YouTube i odande se ugrađuje na stranicu."
         },
         {
           "label": "Alat",
@@ -34,7 +34,7 @@
           "text": "Snimku sam preuzela s Pexelsa, koji nudi videozapise pod besplatnom licencom, i to u 4K rezoluciji."
         },
         {
-          "text": "U Project Settings postavila sam razlučivost timelinea na 1920 × 1080 i broj kadrova na 24, da odgovara snimci koju sam skinula. To mora doći prije uvoza materijala, jer se broj kadrova poslije zaključa i više ga ne možeš promijeniti."
+          "text": "U Project Settings postavila sam razlučivost timelinea na 1920 × 1080 i broj sličica u sekundi na 24, da odgovara snimci koju sam skinula. To mora doći prije uvoza materijala, jer se taj broj poslije zaključa i više se ne može promijeniti."
         },
         {
           "text": "Snimku sam uvukla u Media Pool i otvorila novi timeline. Stavila sam ju na V1 traku."
@@ -43,10 +43,10 @@
           "text": "Naslov sam dodala kao Text+ na traku iznad videa i namjestila da se pojavi tek nakon nekoliko sekundi. Fraunces, font s web stranice, Resolve nije prepoznao, pa sam uzela Georgiju kao najbliži serif koji je već u sustavu. Tekst sam iz sredine spustila u donji dio kadra da ne prekriva posudu, a obojala sam ga tamnom bojom #241F1B umjesto bijelom, jer se bijelo na svijetloj glini jednostavno ne vidi."
         },
         {
-          "text": "Zadnjih nekoliko sekundi čini mirna slika keramičkih posuda sa Unsplasha, a preko nje idu logotip i tekst. Logotip sam morala izvesti iz Inkscapea kao PNG s prozirnom pozadinom, jer Resolve ne uvozi SVG. Tekst sam razdvojila na dva sloja — naziv studija, poziv i termini — da svakom mogu zasebno namjestiti položaj i trenutak pojavljivanja."
+          "text": "Zadnjih nekoliko sekundi čini mirna slika keramičkih posuda s Unsplasha, a preko nje idu logotip i tekst. Logotip sam morala izvesti iz Inkscapea kao PNG s prozirnom pozadinom, jer Resolve ne uvozi SVG. Tekst sam razdvojila na zasebne slojeve — naziv studija, poziv i termini — da svakom mogu posebno namjestiti položaj i trenutak pojavljivanja."
         },
         {
-          "text": "Slojevi u završnom bloku ne ulaze istovremeno nego s malim pomakom, da se tekst čita redom umjesto da padne kao blok. Fadeove sam dodala povlačenjem male oznake u kutu svakog klipa i pazila da svi budu jednako dugi — kad su različiti, odmah se vidi da nisu rađeni s namjerom."
+          "text": "Slojevi u završnom bloku ne ulaze istodobno nego s malim pomakom, da se tekst čita redom umjesto da padne kao blok. Fadeove sam dodala povlačenjem male oznake u kutu svakog klipa i pazila da svi budu jednako dugi — kad su različiti, odmah se vidi da nisu rađeni s namjerom."
         },
         {
           "text": "Na kraju sam dodala zvuk koji sam prije toga složila u Audacityju. Uvezla sam WAV datoteku u Media Pool, stavila ju na audio traku ispod videa i poravnala s početkom snimke, tako da zvuk i slika završavaju u istom trenutku. O samom zvuku i njegovoj izradi pišem više na zasebnoj podstranici Audacity."

@@ -10,7 +10,7 @@
       "type": "hero",
       "eyebrow": "Alat — Photopea",
       "heading": "Obrada fotografija u Photopei",
-      "lead": "Photopeu sam odabrala jer joj je sučelje gotovo isto kao Photoshopu.",
+      "lead": "Photopeu sam odabrala jer joj je sučelje gotovo isto kao u Photoshopu.",
       "specs": [
         {
           "label": "Format",
@@ -21,7 +21,7 @@
           "label": "Alat",
           "value": "Photopea",
           "font": "'Work Sans', system-ui, sans-serif",
-          "note": "Besplatna - web preglednik."
+          "note": "Besplatna, radi u web pregledniku bez instalacije."
         }
       ]
     },
@@ -32,47 +32,47 @@
       "items": [
         {
           "steps": [
-            "Otvorila sam photopeu i išla na Datoteka → Otvori i otvorila sam fotografiju koju sam radije skinula sa Unsplasha.",
-            "Nakon što sam učitala novu forografiju koja mi je u Background sloju idem na Sloj → Novo podešavanje → Krivulje. Sredinu linije povučem prema dolje, do X 200 / Y 94, da cijela slika potamni.",
-            "Kliknem bijeli pravokutnik pored ikone krivulje — to je maska. Po sloju za podešavanje se ne može crtati, samo po njoj.",
-            "Idem na alat za gradijent, iz popisa gotovih odaberem crno-u-prozirno.",
-            "Vrstu gradijenta prebacim s Linearno na Radijalno da bi dibila krgu sa mekim rubovima s kojim ću sredinu vratiti u prirodno svijetlo.",
-            "Povučem iz sredine fotofrafije radijalni gradijent te se ta sredina vraća u orginalno svijetlo da osvjetli lončanicu koja se izrađuje dok ostatak fotografije ostaje tamniji."
+            "Otvorila sam Photopeu, išla na Datoteka → Otvori i učitala fotografiju koju sam prije toga skinula s Unsplasha.",
+            "Fotografija se učitala u sloj Background, pa idem na Sloj → Novo podešavanje → Krivulje. Sredinu linije povučem prema dolje, do X 200 / Y 94, da cijela slika potamni.",
+            "Kliknem bijeli pravokutnik pored ikone krivulje — to je maska. Po sloju za podešavanje ne može se crtati, samo po njoj.",
+            "Idem na alat za gradijent i iz popisa gotovih odaberem crno-u-prozirno.",
+            "Vrstu gradijenta prebacim s Linearno na Radijalno da dobijem krug s mekim rubovima kojim ću sredinu vratiti u prirodnu svjetlinu.",
+            "Povučem radijalni gradijent iz sredine fotografije i ta se sredina vraća u izvornu svjetlinu, tako da osvijetli posudu koja se izrađuje, dok ostatak fotografije ostaje tamniji."
           ],
           "before": {
             "src": "/img/photopea-old-focus.png",
-            "alt": "Fotografija keramičkih zdjelica prije obrade"
+            "alt": "Fotografija ruku koje oblikuju posudu na lončarskom kolu, prije obrade."
           },
           "after": {
             "src": "/img/photopea-focus.png",
-            "alt": "Ista fotografija ali - rubovi su potamnjeni, a sredina je ostala u originalnoj svjetlini."
+            "alt": "Ista fotografija nakon obrade: rubovi su potamnjeni, a sredina je ostala u originalnoj svjetlini."
           },
           "width": 1200,
           "height": 1800
         },
         {
           "steps": [
-            "Otvorila sam photopeu i išla na Datoteka → Otvori i otvorila sam fotografiju koju sam radije skinula sa Unsplasha.",
-            "Nakon što sam učitala novu forografiju koja mi je u Background sloju idem na Sloj → Novo podešavanje → Crno-bijelo da sliku pretvorim u crno - bijelu.",
-            "Idem na alat za gradijent, iz popisa gotovih odaberem crno-u-prozirno. te Povučem par puta kratku srtu preko tanjura da bi se on vratio u izvornu boju dok ostatak slike ostaje sivi."
+            "Otvorila sam Photopeu, išla na Datoteka → Otvori i učitala fotografiju koju sam prije toga skinula s Unsplasha.",
+            "Fotografija se učitala u sloj Background, pa idem na Sloj → Novo podešavanje → Crno-bijelo da sliku pretvorim u crno-bijelu.",
+            "Idem na alat za gradijent i iz popisa gotovih odaberem crno-u-prozirno, pa po maski nekoliko puta povučem kratku crtu preko tanjura da se on vrati u izvornu boju, dok ostatak slike ostaje siv."
           ],
           "before": {
             "src": "/img/photopea-b-w-old.png",
-            "alt": "Fotografija keramike u punoj boji, prije pretvaranja u crno-bijelo."
+            "alt": "Fotografija keramičkog tanjura sa suhim cvjetovima, u punoj boji prije pretvaranja u crno-bijelo."
           },
           "after": {
             "src": "/img/photopea-b-w.png",
-            "alt": "Ista fotografija pretvorena u crno-bijelo, s toplim tonom preko tanjura."
+            "alt": "Ista fotografija pretvorena u crno-bijelo, dok je tanjur zadržao izvornu toplu boju."
           },
           "width": 1200,
           "height": 1800
         },
         {
           "steps": [
-            "Otvorila sam photopeu i išla na Datoteka → Otvori i otvorila sam fotografiju koju sam radije skinula sa Unsplasha.",
+            "Otvorila sam Photopeu, išla na Datoteka → Otvori i učitala fotografiju koju sam prije toga skinula s Unsplasha.",
             "Nakon toga idem na Sloj → Novo podešavanje → Nijansa/Zasićenost.",
-            "Umjesto Master odaberem Crvenu, jer je ružičasta podloga jedina izrazito crvena stvar u kadru.",
-            "Zasićenost na −90 i podloga posivi."
+            "Umjesto Master odaberem Crvenu, jer je ružičasta podloga jedini izrazito crven element u kadru.",
+            "Zasićenost spustim na −90 i podloga posivi."
           ],
           "before": {
             "src": "/img/photopea-saturacija-old.png",
@@ -97,7 +97,7 @@
           "text": "Preko Datoteka → Spremi za web otvorio se dijalog s pretpregledom."
         },
         {
-          "text": "Dimenzije sam smanjila na 1800 px po duljoj stranici. Za društvene mreže dovoljno je 1350, za sliku u tekstu 1200–1600, za punu širinu ekrana do 2560. Širina se prilagodi sama ako je uključena poveznica između polja."
+          "text": "Dimenzije sam smanjila na 1800 px po duljoj strani. Za društvene mreže dovoljno je 1350, za sliku u tekstu 1200–1600, za punu širinu ekrana do 2560. Širina se prilagodi sama ako je uključena poveznica između polja."
         }
       ],
       "variant": "surface"
@@ -110,14 +110,14 @@
       "items": [
         {
           "src": "/img/photopea-focus.png",
-          "alt": "Keramička zdjelica sa fokuson u sredini: rubovi kadra su potamnjeni, a sredina je ostala u originalnoj svjetlini.",
+          "alt": "Ruke koje oblikuju posudu na lončarskom kolu, s fokusom u sredini: rubovi kadra su potamnjeni, a sredina je ostala u originalnoj svjetlini.",
           "caption": "Fokus u sredini",
           "width": 1200,
           "height": 1800
         },
         {
           "src": "/img/photopea-b-w.png",
-          "alt": "Keramika u crno-bijeloj obradi, s toplim tonom preko sivila.",
+          "alt": "Keramika u crno-bijeloj obradi, s tanjurom koji je zadržao izvornu toplu boju.",
           "caption": "Crno-bijelo",
           "width": 1200,
           "height": 1800

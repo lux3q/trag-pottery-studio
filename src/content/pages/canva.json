@@ -37,13 +37,13 @@
           "text": "Iz lijeve alatne trake otvorila sam karticu „Text“ i dodala naslov TRAG — KERAMIČKA RADIONICA, a ispod njega kratak opis radionice u nekoliko rečenica. Oba teksta poravnala sam uz lijevi rub, u gornjoj polovici lijeve strane. Fontove sam odabrala iste kao na web stranici — Fraunces za naslov i Work Sans za tekst — kako bi brošura i web bili prepoznatljivo isti."
         },
         {
-          "text": "Fotografiju ruku na lončarskom kolu preuzela sam s Unsplasha, koji nudi fotografije pod besplatnom licencom. Ubacila sam ju kroz karticu „Uploads“ i opcijom „Upload files“, zatim razvukla preko cijele desne polovice i obrezala tako da zauzima punu visinu brošure."
+          "text": "Fotografiju ruku na lončarskom kolu preuzela sam s Unsplasha, koji nudi fotografije pod besplatnom licencom. Ubacila sam ju kroz karticu „Uploads“, opcijom „Upload files“, zatim razvukla preko cijele desne polovice i obrezala tako da zauzima punu visinu brošure."
         },
         {
           "text": "Kliknula sam na praznu podlogu i u biraču boja upisala hex #F7F4EF — istu boju koju koristim i na web stranici, kako bi tiskani i digitalni materijal djelovali kao cjelina."
         },
         {
-          "text": "Iz kartice „Elements“ dodala sam pravokutnik u donji lijevi kut i obojala ga accent bojom #B45B38, istom koja se na webu koristi za naglaske, da se istakne na svijetloj podlozi. U njega sam upisala termine radionica, adresu i kontakt broj. Tekst sam postavila u bijelu boju zbog boljeg kontrasta na tamnijoj podlozi."
+          "text": "Iz kartice „Elements“ dodala sam pravokutnik u donji lijevi kut i obojala ga bojom naglaska #B45B38, istom koja se na webu koristi za isticanje, da se istakne na svijetloj podlozi. U njega sam upisala termine radionica, adresu i kontakt broj. Tekst sam postavila u bijelu boju zbog boljeg kontrasta na tamnijoj podlozi."
         },
         {
           "text": "Sredina brošure izgledala je prazno, pa sam dodala još jednu fotografiju keramičkih posuda. Pomicala sam ju i mijenjala veličinu dok nije najbolje sjela — između dva teksta, tako da rubom malo prelazi preko desne fotografije i povezuje dvije polovice."
@@ -52,7 +52,7 @@
           "text": "Ispod te fotografije dodala sam bijeli pravokutnik nešto većih dimenzija i preko izbornika „Position“ opcijom „Send backward“ ga poslala iza slike. Tako viri sa svih strana i djeluje kao okvir koji sliku odvaja od pozadine."
         },
         {
-          "text": "Za kraj sam iza riječi TRAG u naslovu dodala pravokutnik u accent boji, a slova obojala bijelo."
+          "text": "Za kraj sam iza riječi TRAG u naslovu dodala pravokutnik u boji naglaska, a slova obojala bijelo."
         },
         {
           "text": "Gotov dizajn izvezla sam preko gumba „Share“ pa „Download“, odabravši format PNG. Datoteku sam zatim spremila u projekt i uključila na ovu stranicu."

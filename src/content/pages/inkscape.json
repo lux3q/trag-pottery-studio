@@ -10,9 +10,9 @@
       "type": "hero",
       "eyebrow": "Alat — Inkscape",
       "heading": "Logo izrađen u Inkscapeu",
-      "lead": "Inkscape sam odabrala jer sam već radila u njemu i dobra je praksa da logo bude vektorski za daljnu upotrebu kao npr za tisak ili favicon.",
+      "lead": "Inkscape sam odabrala jer sam već radila u njemu, a dobra je praksa da logo bude vektorski zbog daljnje upotrebe, npr. za tisak ili favicon.",
       "paragraphs": [
-        "Boja znaka je terakota #B45B38, ista koju web koristi za naglaske. Za takav oblik odlučila sam se jer mi izgleda zanimljivo i pomalo podsjeća na otisak prsta."
+        "Boja znaka je terakota #B45B38, ista koju stranica koristi za naglaske. Za takav oblik odlučila sam se jer mi izgleda zanimljivo i pomalo podsjeća na otisak prsta."
       ],
       "specs": [
         {
@@ -38,7 +38,7 @@
           "text": "Alatom za elipsu nacrtala sam elipsu, malo višu nego širu. Maknula sam joj ispunu i ostavila samo tanak sivi rub, jer mi služi kao vodilja po kojoj ću crtati. Zaključala sam ju u panelu Layers and Objects da mi se ne pomiče dok radim."
         },
         {
-          "text": "Bezier alatom klikala sam osam točaka oko elipse, naizmjence malo unutar i malo izvan nje. Krug nisam zatvorila nego sam pri vrhu ostavila otvor."
+          "text": "Bezier alatom klikala sam osam točaka oko elipse, naizmjence malo unutar i malo izvan nje. Liniju nisam zatvorila nego sam pri vrhu ostavila otvor."
         },
         {
           "text": "Alatom za čvorove označila sam sve čvorove i prečacem Shift+S pretvorila ih u smooth, pa se izlomljena crta zaoblila u valovitu liniju."
